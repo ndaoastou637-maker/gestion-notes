@@ -20,7 +20,14 @@ public class GestionNotes {
         // sans nous laisser le temps de saisir
         // Apres nextInt et nextDouble il faut ajouter un nextLine afin qu'il consomme le retour a la ligne
         // Le probleme n'apparait pas sur prenon et nom parce qu'ils ne sont pas des int ou double
+final double poids_1 = 0.4;
+final double poids_2 = 0.6;
+final int Coefficient_Algorithme = 3;
+final int Coefficient_Base_de_donnees = 2;
+final int Coefficient_Anglais = 1;
+// Si l'examen compte 70% on modifie une seule ligne final double poids_2 = 0.7
+        // modifie 0.6 a 0.7
+        // Un coefficient est int un poids est un double
 
     }
-
 }
