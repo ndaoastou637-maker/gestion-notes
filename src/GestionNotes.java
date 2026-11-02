@@ -51,6 +51,18 @@ final int Coefficient_Anglais = 1;
 
         System.out.println("Brut : " + moyenneAlgo + " | " + moyenneBd + " | " + moyenneAnglais + " | Générale : " + moyenneGenerale);
 // si on ne met pas les paranthese autoure de la somme des produits java diviserait uniquement le dernier terme
+        System.out.println("=====================================");
+        System.out.println("Étudiant : " + prenom + " " + nom + " (" + age + " ans)");
+        System.out.println("Matricule : " + matricule);
+        System.out.println("-------------------------------------");
+
+        // Affichage des moyennes par matière avec printf (arrondies à 2 décimales et alignement des :)
+        System.out.printf("Algorithmique      (coef %d) : %.2f%n", Coefficient_Algorithme, moyenneAlgo);
+        System.out.printf("Base de données    (coef %d) : %.2f%n", Coefficient_Base_de_donnees, moyenneBd);
+        System.out.printf("Anglais            (coef %d) : %.2f%n", Coefficient_Anglais, moyenneAnglais);
+        System.out.println("-------------------------------------");
+        System.out.printf("Moyenne générale             : %.2f%n", moyenneGenerale);
+        System.out.println("=====================================");
 
 
     }
