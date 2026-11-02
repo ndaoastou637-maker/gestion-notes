@@ -28,6 +28,25 @@ final int Coefficient_Anglais = 1;
 // Si l'examen compte 70% on modifie une seule ligne final double poids_2 = 0.7
         // modifie 0.6 a 0.7
         // Un coefficient est int un poids est un double
+        System.out.print("Saisir la note du devoir d'algorithme :");
+        double devoirAlgo = Scanner.nextDouble();
+        System.out.print("Saisir la note d'examen d'Algorithmique : ");
+        double examenAlgo = Scanner.nextDouble();
+
+        System.out.print("Saisir la note de devoir de Base de données : ");
+        double devoirBd = Scanner.nextDouble();
+        System.out.print("Saisir la note d'examen de Base de données : ");
+        double examenBd = Scanner.nextDouble();
+
+        System.out.print("Saisir la note de devoir d'Anglais : ");
+        double devoirAnglais = Scanner.nextDouble();
+        System.out.print("Saisir la note d'examen d'Anglais : ");
+        double examenAnglais = Scanner.nextDouble();
+        double moyenneAlgo = (devoirAlgo * poids_1) + (examenAlgo * poids_2);
+        double moyenneBd = (devoirBd * poids_1) + (examenBd * poids_2);
+        double moyenneAnglais = (devoirAnglais * poids_1) + (examenAnglais * poids_2);
+        System.out.println("Brut :" + moyenneAlgo + "|" + moyenneBd + "|" + moyenneAnglais + "|");
+
 
     }
 }
