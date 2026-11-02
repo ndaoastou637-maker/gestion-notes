@@ -46,6 +46,11 @@ final int Coefficient_Anglais = 1;
         double moyenneBd = (devoirBd * poids_1) + (examenBd * poids_2);
         double moyenneAnglais = (devoirAnglais * poids_1) + (examenAnglais * poids_2);
         System.out.println("Brut :" + moyenneAlgo + "|" + moyenneBd + "|" + moyenneAnglais + "|");
+        int sommeCoefs = Coefficient_Algorithme + Coefficient_Base_de_donnees +Coefficient_Anglais ;
+        double moyenneGenerale = ((moyenneAlgo * Coefficient_Algorithme) + (moyenneBd * Coefficient_Base_de_donnees) + (moyenneAnglais * Coefficient_Anglais)) / sommeCoefs;
+
+        System.out.println("Brut : " + moyenneAlgo + " | " + moyenneBd + " | " + moyenneAnglais + " | Générale : " + moyenneGenerale);
+// si on ne met pas les paranthese autoure de la somme des produits java diviserait uniquement le dernier terme
 
 
     }
