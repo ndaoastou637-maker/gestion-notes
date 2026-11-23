@@ -7,7 +7,7 @@ public class GestionNotes {
         System.out.println("===============================");
         System.out.print("Saisir votre prenom");
         String prenom = Scanner.nextLine();
-        System.out.print("Saiair votre nom");
+        System.out.print("Saisir votre nom");
         String nom = Scanner.nextLine();
         System.out.print("Saisir votre age");
         int age = Scanner.nextInt();
