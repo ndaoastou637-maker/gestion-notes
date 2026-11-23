@@ -5,16 +5,14 @@ public class GestionNotes {
         System.out.println("===============================");
         System.out.println("      RELEVE DE NOTES - L2    ");
         System.out.println("===============================");
-        System.out.print("Saisir votre prenom");
+        System.out.print("Saisir votre prenom :");
         String prenom = Scanner.nextLine();
-        System.out.print("Saisir votre nom");
+        System.out.print("Saisir votre nom :");
         String nom = Scanner.nextLine();
-        System.out.print("Saisir votre age");
-        int age = Scanner.nextInt();
-        Scanner.nextLine();
-        System.out.print("Saisir votre matricule");
+        // On le supprime parce que nextint n'est plus la pour laisser un retour a la ligne a vide sinon nextline lirait le marticule a la place de l'utilisateur
+        System.out.print("Saisir votre matricule :");
         String matricule = Scanner.nextLine();
-        System.out.println("Etudiant: " + prenom + " "+ nom +" ("+age + " ans)");
+        System.out.println("Etudiant: " + prenom + " "+ nom );
         System.out.println("Matricule :" + matricule);
         // Au moment de taper matricule le programme passe directement a la ligne suivante
         // sans nous laisser le temps de saisir
@@ -52,7 +50,7 @@ final int Coefficient_Anglais = 1;
         System.out.println("Brut : " + moyenneAlgo + " | " + moyenneBd + " | " + moyenneAnglais + " | Générale : " + moyenneGenerale);
 // si on ne met pas les paranthese autoure de la somme des produits java diviserait uniquement le dernier terme
         System.out.println("=====================================");
-        System.out.println("Étudiant : " + prenom + " " + nom + " (" + age + " ans)");
+        System.out.println("Étudiant : " + prenom + " " + nom );
         System.out.println("Matricule : " + matricule);
         System.out.println("-------------------------------------");
 
